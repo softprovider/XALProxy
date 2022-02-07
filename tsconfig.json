@@ -1,0 +1,26 @@
+{
+    "include": ["src", "tests"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "target": "ES2015",
+        "allowJs": false,
+        "outDir": "./dist",
+        "lib": ["ES2020"],
+        "rootDir": ".",
+        "baseUrl": ".",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "declaration": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "composite": true,
+        "paths": {
+            "@softprovider/xalproxy-modules-utils": ["../xalproxy-modules-utils/src/index.ts"]
+        }
+    },
+    "references": [
+        { "path": "../xalproxy-modules-utils" }
+    ]
+}

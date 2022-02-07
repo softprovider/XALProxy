@@ -1,0 +1,29 @@
+{
+    "name": "@softprovider/xalproxy",
+    "version": "1.0.0",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "files": ["dist/src/**/*"],
+    "author": "Alexandru Prisacariu",
+    "license": "MIT",
+    "description": "",
+    "scripts": {
+        "build-container": "ts-node -r tsconfig-paths/register ./build.ts",
+        "push-container": "sudo docker push registry.softprovider.ro/trading-bot/trading-manager-service",
+        "start:dev": "ts-node -r tsconfig-paths/register src/run.ts"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.0.2",
+        "@types/js-yaml": "^4.0.4",
+        "@types/nanoid": "^3.0.0",
+        "jest": "^27.3.1",
+        "ts-jest": "^27.1.2",
+        "ts-node": "^10.4.0",
+        "tsconfig-paths": "^3.11.0",
+        "typescript": "^4.4.4"
+    },
+    "dependencies": {
+        "js-yaml": "^4.1.0",
+        "nanoid": "^3.1.30"
+    }
+}
